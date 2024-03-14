@@ -1,108 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #222831;
     color: #ffffff;
     font-family: "montserrat";
 }
-button{
+
+button {
     border: none;
     cursor: pointer;
 }
-.homePage{
+
+.homePage {
     position: relative;
     background-image: url('./images/home_bg_coffee.png');
     background-repeat: no-repeat;
     background-position: right 1px bottom 39px;
     background-size: 42.5rem 35rem
 }
+.toggle{
+    display: none;
+}
 
-.header{
+.toggle_menu {
+    position: absolute;
+    width: 30px;
+    height: 10%;
+    opacity: 0;
+    z-index: 3;
+}
+
+.header {
     width: 92%;
     display: flex;
     justify-content: space-between;
     margin: auto;
 }
 
-.navBar{
+.navBar {
     width: 68%;
     padding-top: 3%;
 }
 
-.navBar a{
+.navBar a {
     text-decoration: none;
     color: #ffffff;
     padding-right: 6%;
     font-size: 20px;
     font-weight: 600;
+    transition: 1s;
 }
 
-.logo{
+.navBar a:hover{
+    text-decoration: underline 2px #29a19c;
+}
+
+.logo {
     width: 14%;
     padding: 3% 0%;
 }
 
-.logo img{
+.logo img {
     width: 100%;
 }
 
-.homeContent{
+.homeContent {
     width: 92%;
     margin: auto;
 
 }
-.icons img{
+
+.icons img {
     position: absolute;
 }
-#cup{
+
+#cup {
     left: 49rem;
 }
-#bun{
+
+#bun {
     top: 19rem;
     left: 40rem;
     height: 7%;
 }
-#jar{
+
+#jar {
     bottom: 12rem;
     left: 26rem;
     width: 6%;
 }
-.homeHeading{
+
+.homeHeading {
     font-family: "Grand Hotel";
     font-size: 70px;
 }
 
-.homeHeading h1{
+.homeHeading h1 {
     font-weight: 100;
     word-spacing: 19px;
     padding-bottom: 1%;
 }
 
-.homeText{
+.homeText {
     width: 38%;
     margin-bottom: 2%;
 }
 
-.homeText h2{
+.homeText h2 {
     font-size: 30px;
     letter-spacing: 1px;
     padding: 2% 0%;
     font-weight: 600;
 }
 
-.homeText p{
+.homeText p {
     font-size: 15px;
     text-align: justify;
     word-spacing: 0.5px;
     line-height: 21px;
 }
 
-#orderNow{
+#orderNow {
     margin-top: 1%;
     padding: 2% 5.5%;
     border-radius: 12px;
@@ -113,38 +136,46 @@ button{
     font-weight: 700;
     border: none;
     margin-top: 4%;
+    transition: 0.5s;
+}
+#orderNow:hover{
+    color: #29a19c;
+    background-color: white;
 }
 
-.homeFooter img{
+.homeFooter img {
     width: 100%;
     position: relative;
     bottom: -4px;
 }
 
-.homeIcons img{
+.homeIcons img {
     position: absolute;
 }
 
-.blackCoffee{
+.blackCoffee {
     background-color: #29a19c;
     position: relative;
 }
+
 .coffeeContents,
 .hotCoffeeContents,
-.whiteCoffeeContents{
+.whiteCoffeeContents {
     display: flex;
     width: 76%;
     margin: auto;
     justify-content: space-between;
 }
+
 .leftContainer,
 .leftHotContainer,
-.leftWhiteContainer{
+.leftWhiteContainer {
     width: 30%;
 }
+
 .coffeeHeading,
 .hotCoffeeHeading,
-.whiteCoffeeHeading{
+.whiteCoffeeHeading {
     font-family: 'Grand Hotel';
     font-size: 63px;
     padding: 27% 0% 0% 0%;
@@ -152,161 +183,194 @@ button{
 
 .coffeeHeading h1,
 .hotCoffeeHeading h1,
-.whiteCoffeeHeading h1{
+.whiteCoffeeHeading h1 {
     font-weight: 100;
     padding: 12% 0%;
     line-height: 113px;
 }
 
-#blackCoffeeButton , 
+#blackCoffeeButton,
 #hotCoffeeButton,
-#whiteCoffeeButton{
+#whiteCoffeeButton,
+#coffeeBtnResponsive,
+#coffeeBtnsResponsive {
     font-size: 28px;
     color: white;
     font-weight: 600;
     padding: 3% 10.5%;
     border-radius: 12px;
     margin: 11% 0%;
+    transition: 0.5s;
+}
+#blackCoffeeButton:hover,
+#hotCoffeeButton:hover,
+#whiteCoffeeButton:hover{
+    font-weight: bold;
+    padding: 3% 11%;
+    font-size: 30px;
 }
 
-#blackCoffeeButton{
+#blackCoffeeButton:hover{
+    color: #222831;
+    background-color: white;
+}
+
+#hotCoffeeButton:hover,
+#whiteCoffeeButton:hover,
+#voucherBtn:hover{
+    color: #29a19c;
+    background-color: white;
+}
+
+#blackCoffeeButton,
+#coffeeBtnResponsive {
     background-color: #222831;
+}
+
+#coffeeBtnResponsive,
+#coffeeBtnsResponsive {
+    display: none;
 }
 
 .rightContainer,
 .rightHotContainer,
-.rightWhiteContainer{
+.rightWhiteContainer {
     width: 46%;
 }
 
-.coffeeImage{
+.coffeeImage {
     margin: 6% 0% 6% 5%;
 }
 
 .coffeeImage img,
-.voucherImage img{
+.voucherImage img {
     width: 100%;
 }
 
-.coffeePara p{
+.coffeePara p {
     font-size: 22px;
     word-spacing: 1px;
     line-height: 28px;
     text-align: right;
 }
 
-#topBun{
+#topBun {
     left: 12rem;
     transform: translateY(-35px);
     transform: rotate(-75deg);
 }
 
-#midBun{
+#midBun {
     top: 3rem;
     left: 36rem;
     width: 3%;
 }
 
-#blackCup{
+#blackCup {
     right: 4rem;
     width: 4%;
 }
 
-#rightBun{
+#rightBun {
     bottom: 3rem;
     left: 15rem;
     width: 2.5%;
     transform: rotate(-63deg);
 }
 
-#blackJar{
+#blackJar {
     top: 18rem;
     left: 36rem;
     width: 8%;
 }
 
-#bottomBun{
+#bottomBun {
     right: 7rem;
     bottom: 8rem;
     width: 4%;
 }
 
-.head img{
+.head img {
     width: 100%;
 }
 
-.hotCoffee{
+.hotCoffee {
     position: relative;
     width: 100%;
-    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/left_tilt_cup.png), url(./images/jar.png);
     background-repeat: no-repeat;
     background-position: left 44rem top 21rem, right 2rem bottom 12rem, 133px 365px, bottom right 35rem;
 }
-.hotCoffeeContents{
+
+.hotCoffeeContents {
     flex-direction: row-reverse;
 }
 
 #hotCoffeeButton,
-#whiteCoffeeButton{
+#whiteCoffeeButton,
+#coffeeBtnsResponsive {
     background-color: #29a19c;
 }
 
-.hotCoffeePara{
+.hotCoffeePara {
     font-size: 19px;
     word-spacing: 2px;
     line-height: 30px;
 }
 
-.leftHotContainer{
+.leftHotContainer {
     text-align: right;
 }
 
-.whiteCoffee{
+.whiteCoffee {
     margin: 3% auto;
-    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/left_tilt_cup.png), url(./images/right_tilt_jar.png);
     background-repeat: no-repeat;
     background-position: left 18rem top 1rem, left 41rem bottom 20rem, right 6rem top 7rem, bottom left 19rem;
 }
 
-.whiteCoffeePara{
+.whiteCoffeePara {
     font-size: 20px;
     word-spacing: 4px;
     line-height: 27px;
     text-align: right;
 }
+
 .voucher {
     margin: 2% 0%;
-    background-image: url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-image: url(./images/left_tilt_bun.png), url(./images/cup.png), url(./images/jar.png);
     background-repeat: no-repeat;
     background-position: right 11rem top 5rem, left 6rem bottom 11rem, bottom right 8rem;
 }
 
-.voucherContainer{
+.voucherContainer {
     width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.voucherHeading{
+
+.voucherHeading {
     font-family: 'Grand Hotel';
     font-size: 49px;
 }
 
-.voucherHeading h1{
+.voucherHeading h1 {
     font-weight: 100;
 }
-
-#voucherBtn{
+#voucherBtn {
     background-color: #29a19c;
     color: white;
-    font-size: 18px;
-    padding: 0.5% 5%;
+    font-size: 21px;
+    padding: 1.5% 6%;
     border-radius: 11px;
     word-spacing: 2px;
+    font-weight: 700;
+    transition: 0.5s;
 }
 
-.reviewsContainer{
+.reviewsContainer {
     width: 70%;
     margin: auto;
     display: flex;
@@ -314,142 +378,154 @@ button{
     text-align: center;
 }
 
-.reviewInnerContainer{
+.reviewInnerContainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .customerReviews {
-    background-image: url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-image: url(./images/bun.png), url(./images/left_tilt_cup.png), url(./images/right_tilt_jar.png);
     background-repeat: no-repeat;
     background-position: right 40rem top 12rem, right 12rem bottom 22rem, bottom 24rem left 6rem;
 }
 
 .reviewHeading,
 .customerName h2,
-.timingHeading h1{
+.timingHeading h1 {
     font-family: 'Grand Hotel';
     font-weight: 100;
 }
 
-.reviewHeading h1{
+.reviewHeading h1 {
     font-size: 66px;
     font-weight: 100;
 }
 
 .johnReview,
-.ellaReview{
+.ellaReview {
     width: 42%;
 }
-.photo{
+
+.photo {
     padding: 6%;
 }
 
-.photo img{
+.photo img {
     width: 100%;
 }
 
-.customerName{
+.customerName {
     padding: 4%;
     font-size: 30px;
 }
 
-.customerPara{
+.customerPara {
     font-size: 16px;
     word-spacing: 3px;
 }
-.customerPara p{
+
+.customerPara p {
     line-height: 23px;
 }
-.reviewFooter img{
+
+.reviewFooter img {
     width: 100%;
     position: relative;
     bottom: -4px;
 }
+
 .timings {
     background-color: #29a19c;
-    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-image: url(./images/left_tilt_bun.png), url(./images/bun.png), url(./images/left_tilt_cup.png), url(./images/jar.png);
     background-repeat: no-repeat;
-    background-position: left 6rem top 1rem, right 12rem bottom 1rem, bottom 4rem left 19rem, bottom right 35rem;
+    background-position: left 6rem top 1rem, right 12rem bottom 1rem, bottom 4rem left 19rem, bottom 17rem right 10rem;
 }
-.timingInnerContent{
+
+.timingInnerContent {
     width: 50%;
     margin: auto;
     text-align: center;
 }
 
-.timingHeading h1{
+.timingHeading h1 {
     font-size: 84px;
     word-spacing: 10px;
 }
 
-.weekdays{
+.weekdays {
     margin: 8%;
 }
-.weekend{
+
+.weekend {
     padding-top: 2%;
 }
+
 .weekdays h2,
-.weekend h2{
+.weekend h2 {
     font-size: 35px;
 }
+
 .weekdays h4,
-.weekend h4{
+.weekend h4 {
     font-weight: 400;
     font-size: 32px;
 }
-.branches{
+
+.branches {
     position: relative;
     text-align: center;
 }
 
 
-.branchesInnerContainer{
+.branchesInnerContainer {
     width: 88%;
     margin: 2% auto;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
 }
 
-#branchRightBun{
+#branchRightBun {
     left: 18rem;
     top: 16rem;
     width: 4%;
 }
-#branchLeftBun{
+
+#branchLeftBun {
     top: 19rem;
     right: 2rem;
     transform: rotate(284deg);
     width: 4%;
 }
-#branchCup{
+
+#branchCup {
     bottom: 10rem;
     right: 23rem;
     transform: rotate(315deg);
 }
-#branchJar{
+
+#branchJar {
     bottom: 15rem;
     left: 26rem;
     transform: rotate(62deg);
     width: 5%;
 }
-.country h3{
+
+.country h3 {
     background-image: url(./images/branch-text-shape.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 12% 2%;
     font-size: 31px;
-    /* margin: 5% auto; */
     background-position: 2px 19px;
 }
 
 .headerWave img,
-.branchFooter img{
+.branchFooter img {
     width: 100%;
 }
 
-.branches h1{
+.branches h1 {
     font-family: 'Grand Hotel';
     font-weight: 100;
     font-size: 91px;
@@ -457,66 +533,75 @@ button{
 
 .newYork,
 .jakarta,
-.paris{
+.paris {
     width: 27%;
 }
-.branchImage{
+
+.branchImage {
     width: 90%;
     margin: auto;
 }
-.branchImage img{
+
+.branchImage img {
     width: 100%;
 }
-.country{
+
+.country {
     width: 83%;
     margin: 2% auto;
     text-align: center;
 }
 
-.description{
+.description {
     width: 100%;
 }
 
-.description p{
+.description p {
     font-size: 14px;
     line-height: 19px;
     word-spacing: 5px;
     text-wrap: balance;
 }
 
-.branchFooter img{
+.branchFooter img {
     transform: rotate(-180deg);
     position: relative;
     bottom: -5px;
 }
 
-.footer{
+.footer {
     background-color: #29a19c;
 }
 
 .footerHead,
 .footerLinks,
-.footerNav{
+.footerNav {
     display: flex;
     justify-content: space-between;
 }
+
 .footerHead,
-.footerNav{
+.footerNav {
     width: 90%;
     margin: auto;
 }
-.footerLogo{
+
+.footerLogo {
     width: 20%;
 }
-.footerLogo img{
+
+.footerLogo img {
     width: 100%;
 }
-.footerLinks{
+
+.footerLinks {
     width: 45%;
 }
-.contact{
+
+.contact {
     width: 44%;
 }
+
 .infoContent a,
 .contactContent a{
     display: block;
@@ -525,38 +610,305 @@ button{
     padding: 2% 0%;
     font-weight: 300;
     font-size: 18px;
+    transition: 0.5s;
 }
-.infoContent{
+
+.infoContent,
+.contactContent {
     margin: 11% auto;
 }
+
 .information h1,
-.contact h1{
+.contact h1 {
     font-weight: 600;
     font-size: 30px;
 }
 
-.navLinks{
+.navLinks {
     width: 63%;
     padding: 2% 0%;
 }
 
-.navLinks a{
+.navLinks a {
     text-decoration: none;
     color: #ffffff;
     padding-right: 6%;
     font-size: 22px;
     font-weight: 600;
+    transition: 0.5s;
 }
-.favIcons{
+
+.navLinks a:hover,
+.infoContent a:hover,
+.contact a:hover{
+    font-weight: 700;
+}
+
+.favIcons {
     width: 20%;
     padding: 2% 0%;
 }
 
-.favIcons a{
+.favIcons a {
     text-decoration: none;
     color: white;
     padding: 0% 7%;
     font-size: 17px;
 }
 
+@media (min-width:360px) and (max-width:576px) {
+    .homePage {
+        background-image: none;
+        text-align: center;
+    }
+    .navLinks{
+        display: none;
+    }
 
+    .header{
+        margin: 4% auto;
+    }
+    .logo{
+        width: 27%;
+    }
+
+    .navBar{
+        position: absolute;
+        width: 100%;
+        right: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #29a19c;
+        text-align: center;
+        transition: 0.75s;
+    }
+    .navBar a{
+        color: white;
+        padding: 5%;
+        border-bottom: 1px solid grey;
+    }
+    .toggle{
+        display: block;
+        content: "";
+        position: relative;
+        background-color: white;
+        width: 30px;
+        height: 4px;
+        margin-top: 7%;
+        z-index: 2;
+    }
+
+    .toggle:before, .toggle:after{
+        position: absolute;
+        content: "";
+        background-color: white;
+        width: 30px;
+        height: 4px;
+        transition: all 0.5s;
+        left: 0px;
+    }
+    .toggle:before{
+        top: -10px;
+        left: 0px;
+    }
+    .toggle:after{
+        top: 10px;
+        left: 0px;
+    }
+
+    .header input:checked~.toggle {
+        background-color: transparent;
+    }
+
+    .header input:checked~.toggle:before {
+        top: 0;
+        width: 20px;
+        transform: rotate(-45deg);
+    }
+
+    .header input:checked~.toggle:after {
+        top: 0;
+        width: 20px;
+        transform: rotate(45deg);
+    }
+
+    .header input:checked~ .navBar{
+        right: 0%;
+    }
+    .homeText,
+    .leftContainer,
+    .leftHotContainer,
+    .leftWhiteContainer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .homeHeading{
+        font-size: 45px;
+    }
+
+    .rightContainer,
+    .rightHotContainer,
+    .rightWhiteContainer {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+
+    .rightContainer{
+        box-shadow: 0px 6px 6px 10px rgb(41, 40, 40);
+    }
+
+    .rightHotContainer,
+    .rightWhiteContainer{
+        box-shadow: 0px 6px 6px 10px black;
+    }
+
+    .coffeeHeading,
+    .hotCoffeeHeading,
+    .whiteCoffeeHeading{
+        font-family: 'Grand Hotel';
+        font-size: 63px;
+        width: 100%;
+        padding-top: 0%;
+    }
+
+    .homeText p,
+    #orderNow{
+        margin: 4% auto;
+    }
+
+    .coffeeHeading h1,
+    .hotCoffeeHeading h1,
+    .whiteCoffeeHeading h1 {
+        font-size: 50px;
+    }
+
+    .icons img {
+        display: none;
+    }
+
+
+    #blackCoffeeButton,
+    #hotCoffeeButton,
+    #whiteCoffeeButton {
+        display: none;
+    }
+
+
+
+    #coffeeBtnResponsive,
+    #coffeeBtnsResponsive {
+        display: block;
+        margin: 3% auto;
+        font-size: 21px;
+        padding: 2% 6.5%;
+    }
+
+    .coffeeContents,
+    .hotCoffeeContents,
+    .whiteCoffeeContents {
+        flex-direction: column;
+    }
+
+    .coffeePara p,
+    .hotCoffeePara p,
+    .whiteCoffeePara p {
+        text-align: justify;
+        padding: 2%;
+        font-size: 16px;
+    }
+
+    .voucher{
+        margin: 16% auto;
+    }
+    .voucherContainer,
+    .reviewsContainer,
+    .timingInnerContent,
+    .contactContent{
+        width: 100%;
+    }
+    .voucherHeading{
+        font-size: 27px;
+    }
+    #voucherBtn{
+        font-size: 16px;
+        padding: 3.5% 6%;
+    }
+
+    .reviewInnerContainer,
+    .branchesInnerContainer,
+    .footerHeader{
+        flex-direction: column;
+    }
+    .reviewHeading h1{
+        font-size: 49px;
+    }
+
+    .johnReview{
+        margin: 5% auto;
+    }
+
+    .ellaReview{
+        margin: 6% auto;
+    }
+
+    .johnReview,
+    .ellaReview{
+        width: 80%;
+        box-shadow: 0px 5px 5px 5px black;
+    }
+    .timingHeading h1{
+        font-size: 60px;
+    }
+    .weekdays h2,
+    .weekend h2{
+        font-size: 26px;
+    }
+    .weekdays h4, .weekend h4 {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .branches h1{
+        font-size: 66px;
+    }
+    .newYork,
+    .jakarta,
+    .paris{
+        width: 100%;
+    }
+
+    .jakarta{
+        margin: 17% auto;
+    }
+    .paris{
+        margin-bottom: 4%;
+    }
+    .footerHead{
+        flex-direction: column;
+    }
+
+    .footerLogo {
+        width: 37%;
+        margin: auto;
+    }
+    .footerLinks {
+        width: 100%;
+        margin: 3% auto;
+    }
+
+    .infoContent a,
+    .contactContent a{
+        font-size: 15px;
+    }
+    .information h1,
+.contact h1 {
+    font-size: 20px;
+}
+.favIcons{
+    width: 60%;
+    margin: auto;
+}
+}

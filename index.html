@@ -11,10 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
-
+<!-- A responsive website for a coffee brand -->
 <body>
     <div class="homePage">
         <div class="header">
+
+            <!-- A label and checkbox for applying animaiton for a navigation panel on a responsive website -->
+            <input type="checkbox" class="toggle_menu" id="menu_checkbox" />
+            <div class="toggle"></div>
+
+            <!-- Navigation Bar -->
             <div class="navBar">
                 <a href="#">Home</a>
                 <a href="#">About</a>
@@ -27,6 +33,7 @@
                 <img src="./images/logo.png" alt="Logo" />
             </div>
         </div>
+        <!-- Content on tbe homepage -->
         <div class="homeContent">
             <div class="icons">
                 <img src="./images/cup.png" alt="cup" id="cup" />
@@ -40,7 +47,8 @@
                 <h2>YOUR HEADLINE</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua</p>
-
+                    
+                    <!-- Order Now Button -->
                 <button id="orderNow">Order Now</button>
             </div>
         </div>
@@ -48,7 +56,10 @@
             <img src="./images/home_footer_image.png" alt="Waves" />
         </div>
     </div>
+    <!-- Description for Black Coffee -->
     <div class="blackCoffee">
+
+        <!-- Images for cups buns and jars in the background -->
         <div class="icons">
             <img src="./images/bun.png" alt="bun" id="midBun" />
             <img src="./images/cup.png" alt="cup" id="blackCup" />
@@ -56,6 +67,7 @@
             <img src="./images/jar.png" alt="jar" id="blackJar" />
             <img src="./images/bun.png" alt="bun" id="bottomBun" />
         </div>
+
         <div class="coffeeContents">
             <div class="leftContainer">
                 <div class="coffeeHeading">
@@ -73,35 +85,47 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosturd exercitation.
                     </p>
                 </div>
+
+               <!-- This button is hidden in the desktop website, it is added to adjust the alignment and ordering of contents in the obile responsive website -->
+                <button id="coffeeBtnResponsive">Order Now</button>
             </div>
         </div>
     </div>
-
+    <!-- Description for a hot coffee -->
     <div class="hotCoffee">
         <div class="head">
+
+            <!-- waves image -->
             <img src="./images/header_waves.png" alt="Waves" />
         </div>
+
         <div class="hotCoffeeContents">
             <div class="leftHotContainer">
                 <div class="hotCoffeeHeading">
                     <h1>Hot Coffees</h1>
                 </div>
+
+                <!-- Button for ordering the coffee -->
                 <button id="hotCoffeeButton">Order Now</button>
             </div>
             <div class="rightHotContainer">
                 <div class="coffeeImage">
                     <img src="./images/hot_coffee.png" alt="hotCoffee" />
                 </div>
+
                 <div class="hotCoffeePara">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosturd exercitation.
                     </p>
                 </div>
+                <!-- This button is hidden in the desktop website, it is added to adjust the alignment and ordering of contents in the obile responsive website -->
+                <button id="coffeeBtnsResponsive">Order Now</button>
             </div>
         </div>
     </div>
 
+    <!-- Description for a white coffee -->
     <div class="whiteCoffee">
         <div class="whiteCoffeeContents">
             <div class="leftWhiteContainer">
@@ -118,14 +142,16 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosturd exercitation.sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nosturd
-                        exercitation
+                        tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
+
+                <!-- This button is hidden in the desktop website, it is added to adjust the alignment and ordering of contents in the obile responsive website -->
+                <button id="coffeeBtnsResponsive">Order Now</button>
             </div>
         </div>
     </div>
-
+    <!-- A voucher section -->
     <div class="voucher">
         <div class="voucherContainer">
             <div class="voucherHeading">
@@ -138,6 +164,7 @@
         </div>
     </div>
 
+    <!-- Customer review section -->
     <div class="customerReviews">
         <div class="reviewsContainer">
             <div class="reviewHeading">
@@ -145,6 +172,7 @@
             </div>
 
             <div class="reviewInnerContainer">
+                <!-- review of john -->
                 <div class="johnReview">
                     <div class="photo">
                         <img src="./images/john.png" alt="john" />
@@ -157,6 +185,7 @@
                             labore et dolore magna aliqua. Quis</p>
                     </div>
                 </div>
+                <!-- review of ella -->
                 <div class="ellaReview">
                     <div class="photo">
                         <img src="./images/ella.png" alt="ella" />
@@ -177,6 +206,7 @@
         </div>
     </div>
 
+    <!-- A desciption of timings of the store -->
     <div class="timings">
         <div class="timingInnerContent">
             <div class="timingHeading">
@@ -193,6 +223,7 @@
         </div>
     </div>
 
+    <!-- A desciption of various branches of the store at different countries -->
     <div class="branches">
         <div class="icons">
             <img src="./images/bun.png" alt="bun" id="branchRightBun" />
@@ -254,6 +285,7 @@
         </div>
     </div>
 
+    <!-- footer section -->
     <div class="footer">
         <div class="footerHead">
             <div class="footerLogo">
@@ -262,21 +294,21 @@
             <div class="footerLinks">
                 <div class="information">
                     <h1>Information.</h1>
-                <div class="infoContent">
-                    <a href="#">About Us</a>
-                    <a href="#">Branches</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Map</a>
+                    <div class="infoContent">
+                        <a href="#">About Us</a>
+                        <a href="#">Branches</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Map</a>
+                    </div>
                 </div>
-            </div>
                 <div class="contact">
                     <h1>Contact Us.</h1>
-                <div class="contactContent">
-                    <a href="#">Support</a>
-                    <a href="#">your_id@gmail.com</a>
+                    <div class="contactContent">
+                        <a href="#">Support</a>
+                        <a href="#">your_id@gmail.com</a>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="footerNav">
@@ -304,6 +336,17 @@
             </div>
         </div>
     </div>
+
+    <!-- A javascript function to add a sliding animation on the navigation panel -->
+
+    <script>
+        var checkbox = document.getElementById("menu_checkbox");
+
+        window.onscroll = function () {
+            checkbox.checked = false;
+        };
+    </script>
+
 </body>
 
 </html>
