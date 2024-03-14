@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222831;
+    color: #ffffff;
+    font-family: "montserrat";
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+.homePage{
+    position: relative;
+    background-image: url('./images/home_bg_coffee.png');
+    background-repeat: no-repeat;
+    background-position: right 1px bottom 39px;
+    background-size: 42.5rem 35rem
+}
+
+.header{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navBar{
+    width: 68%;
+    padding-top: 3%;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 6%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo{
+    width: 14%;
+    padding: 3% 0%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.homeContent{
+    width: 92%;
+    margin: auto;
+
+}
+.icons img{
+    position: absolute;
+}
+#cup{
+    left: 49rem;
+}
+#bun{
+    top: 19rem;
+    left: 40rem;
+    height: 7%;
+}
+#jar{
+    bottom: 12rem;
+    left: 26rem;
+    width: 6%;
+}
+.homeHeading{
+    font-family: "Grand Hotel";
+    font-size: 70px;
+}
+
+.homeHeading h1{
+    font-weight: 100;
+    word-spacing: 19px;
+    padding-bottom: 1%;
+}
+
+.homeText{
+    width: 38%;
+    margin-bottom: 2%;
+}
+
+.homeText h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 2% 0%;
+    font-weight: 600;
+}
+
+.homeText p{
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 0.5px;
+    line-height: 21px;
+}
+
+#orderNow{
+    margin-top: 1%;
+    padding: 2% 5.5%;
+    border-radius: 12px;
+    background-color: #29a19c;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 27px;
+    font-weight: 700;
+    border: none;
+    margin-top: 4%;
+}
+
+.homeFooter img{
+    width: 100%;
+    position: relative;
+    bottom: -4px;
+}
+
+.homeIcons img{
+    position: absolute;
+}
+
+.blackCoffee{
+    background-color: #29a19c;
+    position: relative;
+}
+.coffeeContents,
+.hotCoffeeContents,
+.whiteCoffeeContents{
+    display: flex;
+    width: 76%;
+    margin: auto;
+    justify-content: space-between;
+}
+.leftContainer,
+.leftHotContainer,
+.leftWhiteContainer{
+    width: 30%;
+}
+.coffeeHeading,
+.hotCoffeeHeading,
+.whiteCoffeeHeading{
+    font-family: 'Grand Hotel';
+    font-size: 63px;
+    padding: 27% 0% 0% 0%;
+}
+
+.coffeeHeading h1,
+.hotCoffeeHeading h1,
+.whiteCoffeeHeading h1{
+    font-weight: 100;
+    padding: 12% 0%;
+    line-height: 113px;
+}
+
+#blackCoffeeButton , 
+#hotCoffeeButton,
+#whiteCoffeeButton{
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    padding: 3% 10.5%;
+    border-radius: 12px;
+    margin: 11% 0%;
+}
+
+#blackCoffeeButton{
+    background-color: #222831;
+}
+
+.rightContainer,
+.rightHotContainer,
+.rightWhiteContainer{
+    width: 46%;
+}
+
+.coffeeImage{
+    margin: 6% 0% 6% 5%;
+}
+
+.coffeeImage img,
+.voucherImage img{
+    width: 100%;
+}
+
+.coffeePara p{
+    font-size: 22px;
+    word-spacing: 1px;
+    line-height: 28px;
+    text-align: right;
+}
+
+#topBun{
+    left: 12rem;
+    transform: translateY(-35px);
+    transform: rotate(-75deg);
+}
+
+#midBun{
+    top: 3rem;
+    left: 36rem;
+    width: 3%;
+}
+
+#blackCup{
+    right: 4rem;
+    width: 4%;
+}
+
+#rightBun{
+    bottom: 3rem;
+    left: 15rem;
+    width: 2.5%;
+    transform: rotate(-63deg);
+}
+
+#blackJar{
+    top: 18rem;
+    left: 36rem;
+    width: 8%;
+}
+
+#bottomBun{
+    right: 7rem;
+    bottom: 8rem;
+    width: 4%;
+}
+
+.head img{
+    width: 100%;
+}
+
+.hotCoffee{
+    position: relative;
+    width: 100%;
+    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-repeat: no-repeat;
+    background-position: left 44rem top 21rem, right 2rem bottom 12rem, 133px 365px, bottom right 35rem;
+}
+.hotCoffeeContents{
+    flex-direction: row-reverse;
+}
+
+#hotCoffeeButton,
+#whiteCoffeeButton{
+    background-color: #29a19c;
+}
+
+.hotCoffeePara{
+    font-size: 19px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+
+.leftHotContainer{
+    text-align: right;
+}
+
+.whiteCoffee{
+    margin: 3% auto;
+    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-repeat: no-repeat;
+    background-position: left 18rem top 1rem, left 41rem bottom 20rem, right 6rem top 7rem, bottom left 19rem;
+}
+
+.whiteCoffeePara{
+    font-size: 20px;
+    word-spacing: 4px;
+    line-height: 27px;
+    text-align: right;
+}
+.voucher {
+    margin: 2% 0%;
+    background-image: url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-repeat: no-repeat;
+    background-position: right 11rem top 5rem, left 6rem bottom 11rem, bottom right 8rem;
+}
+
+.voucherContainer{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.voucherHeading{
+    font-family: 'Grand Hotel';
+    font-size: 49px;
+}
+
+.voucherHeading h1{
+    font-weight: 100;
+}
+
+#voucherBtn{
+    background-color: #29a19c;
+    color: white;
+    font-size: 18px;
+    padding: 0.5% 5%;
+    border-radius: 11px;
+    word-spacing: 2px;
+}
+
+.reviewsContainer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reviewInnerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.customerReviews {
+    background-image: url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-repeat: no-repeat;
+    background-position: right 40rem top 12rem, right 12rem bottom 22rem, bottom 24rem left 6rem;
+}
+
+.reviewHeading,
+.customerName h2,
+.timingHeading h1{
+    font-family: 'Grand Hotel';
+    font-weight: 100;
+}
+
+.reviewHeading h1{
+    font-size: 66px;
+    font-weight: 100;
+}
+
+.johnReview,
+.ellaReview{
+    width: 42%;
+}
+.photo{
+    padding: 6%;
+}
+
+.photo img{
+    width: 100%;
+}
+
+.customerName{
+    padding: 4%;
+    font-size: 30px;
+}
+
+.customerPara{
+    font-size: 16px;
+    word-spacing: 3px;
+}
+.customerPara p{
+    line-height: 23px;
+}
+.reviewFooter img{
+    width: 100%;
+    position: relative;
+    bottom: -4px;
+}
+.timings {
+    background-color: #29a19c;
+    background-image: url(./images/bun.png), url(./images/bun.png), url(./images/cup.png), url(./images/jar.png);
+    background-repeat: no-repeat;
+    background-position: left 6rem top 1rem, right 12rem bottom 1rem, bottom 4rem left 19rem, bottom right 35rem;
+}
+.timingInnerContent{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.timingHeading h1{
+    font-size: 84px;
+    word-spacing: 10px;
+}
+
+.weekdays{
+    margin: 8%;
+}
+.weekend{
+    padding-top: 2%;
+}
+.weekdays h2,
+.weekend h2{
+    font-size: 35px;
+}
+.weekdays h4,
+.weekend h4{
+    font-weight: 400;
+    font-size: 32px;
+}
+.branches{
+    position: relative;
+    text-align: center;
+}
+
+
+.branchesInnerContainer{
+    width: 88%;
+    margin: 2% auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+#branchRightBun{
+    left: 18rem;
+    top: 16rem;
+    width: 4%;
+}
+#branchLeftBun{
+    top: 19rem;
+    right: 2rem;
+    transform: rotate(284deg);
+    width: 4%;
+}
+#branchCup{
+    bottom: 10rem;
+    right: 23rem;
+    transform: rotate(315deg);
+}
+#branchJar{
+    bottom: 15rem;
+    left: 26rem;
+    transform: rotate(62deg);
+    width: 5%;
+}
+.country h3{
+    background-image: url(./images/branch-text-shape.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 12% 2%;
+    font-size: 31px;
+    /* margin: 5% auto; */
+    background-position: 2px 19px;
+}
+
+.headerWave img,
+.branchFooter img{
+    width: 100%;
+}
+
+.branches h1{
+    font-family: 'Grand Hotel';
+    font-weight: 100;
+    font-size: 91px;
+}
+
+.newYork,
+.jakarta,
+.paris{
+    width: 27%;
+}
+.branchImage{
+    width: 90%;
+    margin: auto;
+}
+.branchImage img{
+    width: 100%;
+}
+.country{
+    width: 83%;
+    margin: 2% auto;
+    text-align: center;
+}
+
+.description{
+    width: 100%;
+}
+
+.description p{
+    font-size: 14px;
+    line-height: 19px;
+    word-spacing: 5px;
+    text-wrap: balance;
+}
+
+.branchFooter img{
+    transform: rotate(-180deg);
+    position: relative;
+    bottom: -5px;
+}
+
+.footer{
+    background-color: #29a19c;
+}
+
+.footerHead,
+.footerLinks,
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+}
+.footerHead,
+.footerNav{
+    width: 90%;
+    margin: auto;
+}
+.footerLogo{
+    width: 20%;
+}
+.footerLogo img{
+    width: 100%;
+}
+.footerLinks{
+    width: 45%;
+}
+.contact{
+    width: 44%;
+}
+.infoContent a,
+.contactContent a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2% 0%;
+    font-weight: 300;
+    font-size: 18px;
+}
+.infoContent{
+    margin: 11% auto;
+}
+.information h1,
+.contact h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.navLinks{
+    width: 63%;
+    padding: 2% 0%;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 6%;
+    font-size: 22px;
+    font-weight: 600;
+}
+.favIcons{
+    width: 20%;
+    padding: 2% 0%;
+}
+
+.favIcons a{
+    text-decoration: none;
+    color: white;
+    padding: 0% 7%;
+    font-size: 17px;
+}
+
+
