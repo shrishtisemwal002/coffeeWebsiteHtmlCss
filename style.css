@@ -23,7 +23,8 @@ button {
     background-position: right 1px bottom 39px;
     background-size: 42.5rem 35rem
 }
-.toggle{
+
+.toggle {
     display: none;
 }
 
@@ -56,7 +57,7 @@ button {
     transition: 1s;
 }
 
-.navBar a:hover{
+.navBar a:hover {
     text-decoration: underline 2px #29a19c;
 }
 
@@ -138,7 +139,8 @@ button {
     margin-top: 4%;
     transition: 0.5s;
 }
-#orderNow:hover{
+
+#orderNow:hover {
     color: #29a19c;
     background-color: white;
 }
@@ -202,22 +204,23 @@ button {
     margin: 11% 0%;
     transition: 0.5s;
 }
+
 #blackCoffeeButton:hover,
 #hotCoffeeButton:hover,
-#whiteCoffeeButton:hover{
+#whiteCoffeeButton:hover {
     font-weight: bold;
     padding: 3% 11%;
     font-size: 30px;
 }
 
-#blackCoffeeButton:hover{
+#blackCoffeeButton:hover {
     color: #222831;
     background-color: white;
 }
 
 #hotCoffeeButton:hover,
 #whiteCoffeeButton:hover,
-#voucherBtn:hover{
+#voucherBtn:hover {
     color: #29a19c;
     background-color: white;
 }
@@ -359,6 +362,7 @@ button {
 .voucherHeading h1 {
     font-weight: 100;
 }
+
 #voucherBtn {
     background-color: #29a19c;
     color: white;
@@ -603,7 +607,7 @@ button {
 }
 
 .infoContent a,
-.contactContent a{
+.contactContent a {
     display: block;
     text-decoration: none;
     color: white;
@@ -640,7 +644,7 @@ button {
 
 .navLinks a:hover,
 .infoContent a:hover,
-.contact a:hover{
+.contact a:hover {
     font-weight: 700;
 }
 
@@ -661,18 +665,20 @@ button {
         background-image: none;
         text-align: center;
     }
-    .navLinks{
+
+    .navLinks {
         display: none;
     }
 
-    .header{
+    .header {
         margin: 4% auto;
     }
-    .logo{
+
+    .logo {
         width: 27%;
     }
 
-    .navBar{
+    .navBar {
         position: absolute;
         width: 100%;
         right: 100%;
@@ -682,12 +688,14 @@ button {
         text-align: center;
         transition: 0.75s;
     }
-    .navBar a{
+
+    .navBar a {
         color: white;
         padding: 5%;
         border-bottom: 1px solid grey;
     }
-    .toggle{
+
+    .toggle {
         display: block;
         content: "";
         position: relative;
@@ -698,7 +706,8 @@ button {
         z-index: 2;
     }
 
-    .toggle:before, .toggle:after{
+    .toggle:before,
+    .toggle:after {
         position: absolute;
         content: "";
         background-color: white;
@@ -707,11 +716,13 @@ button {
         transition: all 0.5s;
         left: 0px;
     }
-    .toggle:before{
+
+    .toggle:before {
         top: -10px;
         left: 0px;
     }
-    .toggle:after{
+
+    .toggle:after {
         top: 10px;
         left: 0px;
     }
@@ -732,9 +743,10 @@ button {
         transform: rotate(45deg);
     }
 
-    .header input:checked~ .navBar{
+    .header input:checked~.navBar {
         right: 0%;
     }
+
     .homeText,
     .leftContainer,
     .leftHotContainer,
@@ -743,7 +755,7 @@ button {
         width: 100%;
     }
 
-    .homeHeading{
+    .homeHeading {
         font-size: 58px;
     }
 
@@ -756,18 +768,18 @@ button {
         padding: 2%;
     }
 
-    .rightContainer{
+    .rightContainer {
         box-shadow: 0px 6px 6px 10px rgb(41, 40, 40);
     }
 
     .rightHotContainer,
-    .rightWhiteContainer{
+    .rightWhiteContainer {
         box-shadow: 0px 6px 6px 10px black;
     }
 
     .coffeeHeading,
     .hotCoffeeHeading,
-    .whiteCoffeeHeading{
+    .whiteCoffeeHeading {
         font-family: 'Grand Hotel';
         font-size: 63px;
         width: 100%;
@@ -775,7 +787,7 @@ button {
     }
 
     .homeText p,
-    #orderNow{
+    #orderNow {
         margin: 4% auto;
     }
 
@@ -788,9 +800,11 @@ button {
     .icons img {
         display: none;
     }
+
     .hotCoffee,
     .whiteCoffee,
-    .timings{
+    .timings,
+    .voucher {
         background-image: none;
     }
 
@@ -824,73 +838,88 @@ button {
         font-size: 16px;
     }
 
-    .voucher{
+    .voucher {
         margin: 16% auto;
     }
+
+    .voucherImage{
+        width: 86%;
+    }
+
     .voucherContainer,
     .reviewsContainer,
     .timingInnerContent,
-    .contactContent{
+    .contactContent {
         width: 100%;
     }
-    .voucherHeading{
+
+    .voucherHeading {
         font-size: 27px;
     }
-    #voucherBtn{
-        font-size: 16px;
+
+    #voucherBtn {
+        font-size: 15px;
         padding: 3.5% 6%;
     }
 
     .reviewInnerContainer,
     .branchesInnerContainer,
-    .footerHeader{
+    .footerHeader {
         flex-direction: column;
     }
-    .reviewHeading h1{
+
+    .reviewHeading h1 {
         font-size: 49px;
     }
 
-    .johnReview{
+    .johnReview {
         margin: 5% auto;
     }
 
-    .ellaReview{
+    .ellaReview {
         margin: 6% auto;
     }
 
     .johnReview,
-    .ellaReview{
+    .ellaReview {
         width: 80%;
         box-shadow: 0px 5px 5px 5px black;
     }
-    .timingHeading h1{
+
+    .timingHeading h1 {
         font-size: 60px;
     }
+
     .weekdays h2,
-    .weekend h2{
+    .weekend h2 {
         font-size: 26px;
     }
-    .weekdays h4, .weekend h4 {
+
+    .weekdays h4,
+    .weekend h4 {
         font-weight: 400;
         font-size: 24px;
     }
 
-    .branches h1{
+    .branches h1 {
         font-size: 66px;
     }
+
     .newYork,
     .jakarta,
-    .paris{
+    .paris {
         width: 100%;
     }
 
-    .jakarta{
+    .jakarta {
         margin: 17% auto;
     }
-    .paris{
+
+    .paris {
         margin-bottom: 4%;
     }
-    .footerHead{
+
+    .footerHead {
         flex-direction: column;
     }
 
@@ -898,21 +927,24 @@ button {
         width: 37%;
         margin: auto;
     }
+
     .footerLinks {
         width: 100%;
         margin: 3% auto;
     }
 
     .infoContent a,
-    .contactContent a{
+    .contactContent a {
         font-size: 15px;
     }
+
     .information h1,
-.contact h1 {
-    font-size: 20px;
-}
-.favIcons{
-    width: 60%;
-    margin: auto;
-}
+    .contact h1 {
+        font-size: 20px;
+    }
+
+    .favIcons {
+        width: 60%;
+        margin: auto;
+    }
 }
